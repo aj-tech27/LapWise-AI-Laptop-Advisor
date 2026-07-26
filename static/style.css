@@ -6,6 +6,8 @@
 }
 
 
+/* Main Body */
+
 body {
 
     min-height: 100vh;
@@ -20,15 +22,15 @@ body {
 
     flex-direction: column;
 
-    justify-content: space-between;
-
     align-items: center;
 
-    padding: 30px;
+    padding: 20px;
 
 }
 
 
+
+/* Main Container */
 
 .container {
 
@@ -47,6 +49,8 @@ body {
 }
 
 
+
+/* Headings */
 
 h1 {
 
@@ -75,6 +79,8 @@ h1 {
 }
 
 
+
+/* Form */
 
 label {
 
@@ -107,6 +113,8 @@ select {
 }
 
 
+
+/* Buttons */
 
 button {
 
@@ -146,6 +154,8 @@ button:hover {
 
 
 
+/* Recommendation Cards */
+
 .card {
 
     background: #f8f9fa;
@@ -184,6 +194,8 @@ button:hover {
 
 
 
+/* Match Score */
+
 .match {
 
     background: #d4edda;
@@ -204,13 +216,15 @@ button:hover {
 
 
 
+/* Reason Box */
+
 .reason {
 
     margin-top: 20px;
 
     padding: 15px;
 
-    background: #fff;
+    background: white;
 
     border-radius: 10px;
 
@@ -237,6 +251,8 @@ button:hover {
 }
 
 
+
+/* Back Button */
 
 .button {
 
@@ -278,18 +294,88 @@ footer {
 
     text-align: center;
 
-    margin-top: 30px;
+    padding: 20px 0;
 
-    padding: 20px;
+    margin-top: 30px;
 
     font-family: "Poppins", sans-serif;
 
-    font-size: 15px;
+    font-size: 14px;
 
     font-weight: 500;
 
     letter-spacing: 0.5px;
 
     color: rgba(255,255,255,0.9);
+
+}
+
+
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+
+
+    body {
+
+        padding: 15px;
+
+    }
+
+
+    .container {
+
+        width: 100%;
+
+        padding: 25px;
+
+        border-radius: 15px;
+
+    }
+
+
+    h1 {
+
+        font-size: 24px;
+
+    }
+
+
+    .subtitle {
+
+        font-size: 14px;
+
+    }
+
+
+    select {
+
+        font-size: 14px;
+
+    }
+
+
+    button {
+
+        font-size: 16px;
+
+    }
+
+
+    .card {
+
+        padding: 20px;
+
+    }
+
+
+    footer {
+
+        font-size: 13px;
+
+        padding: 15px 0;
+
+    }
 
 }
