@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Segoe UI", sans-serif;
+    font-family: "Poppins", "Segoe UI", sans-serif;
 }
 
 
@@ -18,7 +18,9 @@ body {
 
     display: flex;
 
-    justify-content: center;
+    flex-direction: column;
+
+    justify-content: space-between;
 
     align-items: center;
 
@@ -54,6 +56,8 @@ h1 {
 
     margin-bottom: 10px;
 
+    font-weight: 600;
+
 }
 
 
@@ -66,6 +70,8 @@ h1 {
 
     margin-bottom: 30px;
 
+    font-size: 15px;
+
 }
 
 
@@ -74,7 +80,7 @@ label {
 
     display: block;
 
-    font-weight: bold;
+    font-weight: 500;
 
     margin-top: 20px;
 
@@ -86,7 +92,6 @@ label {
 
 select {
 
-
     width: 100%;
 
     padding: 12px;
@@ -95,7 +100,9 @@ select {
 
     border: 1px solid #ccc;
 
-    font-size: 16px;
+    font-size: 15px;
+
+    font-family: "Poppins", sans-serif;
 
 }
 
@@ -103,33 +110,29 @@ select {
 
 button {
 
-
     width: 100%;
 
     margin-top: 30px;
 
     padding: 14px;
 
-
     border: none;
 
     border-radius: 12px;
 
-
     background: #007bff;
-
 
     color: white;
 
+    font-size: 17px;
 
-    font-size: 18px;
+    font-family: "Poppins", sans-serif;
 
+    font-weight: 500;
 
     cursor: pointer;
 
-
     transition: 0.3s;
-
 
 }
 
@@ -145,21 +148,15 @@ button:hover {
 
 .card {
 
-
     background: #f8f9fa;
-
 
     padding: 25px;
 
-
     margin-top: 25px;
-
 
     border-radius: 15px;
 
-
     border-left: 6px solid #007bff;
-
 
 }
 
@@ -171,6 +168,8 @@ button:hover {
 
     margin-bottom: 15px;
 
+    font-weight: 600;
+
 }
 
 
@@ -179,7 +178,7 @@ button:hover {
 
     margin: 10px 0;
 
-    font-size: 16px;
+    font-size: 15px;
 
 }
 
@@ -199,24 +198,21 @@ button:hover {
 
     margin-bottom: 15px;
 
+    font-weight: 500;
+
 }
 
 
 
 .reason {
 
-
     margin-top: 20px;
-
 
     padding: 15px;
 
-
     background: #fff;
 
-
     border-radius: 10px;
-
 
 }
 
@@ -225,6 +221,8 @@ button:hover {
 .reason h3 {
 
     margin-bottom: 10px;
+
+    font-weight: 600;
 
 }
 
@@ -242,30 +240,23 @@ button:hover {
 
 .button {
 
-
     display: block;
-
 
     text-align: center;
 
-
     margin-top: 30px;
-
 
     padding: 12px;
 
-
     background: #28a745;
-
 
     color: white;
 
-
     text-decoration: none;
-
 
     border-radius: 10px;
 
+    font-weight: 500;
 
 }
 
@@ -273,8 +264,32 @@ button:hover {
 
 .button:hover {
 
-
     background: #1e7e34;
 
+}
+
+
+
+/* Footer */
+
+footer {
+
+    width: 100%;
+
+    text-align: center;
+
+    margin-top: 30px;
+
+    padding: 20px;
+
+    font-family: "Poppins", sans-serif;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    letter-spacing: 0.5px;
+
+    color: rgba(255,255,255,0.9);
 
 }

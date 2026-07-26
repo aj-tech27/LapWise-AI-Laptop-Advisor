@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
     <title>LapWise AI Advisor</title>
 
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 
 </head>
 
@@ -31,25 +34,11 @@
 
         <select name="purpose" required>
 
-            <option value="Gaming">
-                Gaming
-            </option>
-
-            <option value="Coding">
-                Coding
-            </option>
-
-            <option value="Student">
-                Student / Learning
-            </option>
-
-            <option value="Office">
-                Office Work
-            </option>
-
-            <option value="Editing">
-                Video / Photo Editing
-            </option>
+            <option value="Gaming">Gaming</option>
+            <option value="Coding">Coding</option>
+            <option value="Student">Student / Learning</option>
+            <option value="Office">Office Work</option>
+            <option value="Editing">Video / Photo Editing</option>
 
         </select>
 
@@ -59,26 +48,13 @@
             What is your budget?
         </label>
 
-
         <select name="budget" required>
 
-            <option value="50000">
-                Below ₹50,000
-            </option>
-
-
-            <option value="80000">
-                ₹50,000 - ₹80,000
-            </option>
-
-
-            <option value="120000">
-                Above ₹80,000
-            </option>
-
+            <option value="50000">Below ₹50,000</option>
+            <option value="80000">₹50,000 - ₹80,000</option>
+            <option value="120000">Above ₹80,000</option>
 
         </select>
-
 
 
 
@@ -86,27 +62,13 @@
             How much RAM do you need?
         </label>
 
-
         <select name="ram" required>
 
-
-            <option value="8">
-                8 GB
-            </option>
-
-
-            <option value="16">
-                16 GB
-            </option>
-
-
-            <option value="32">
-                32 GB
-            </option>
-
+            <option value="8">8 GB</option>
+            <option value="16">16 GB</option>
+            <option value="32">32 GB</option>
 
         </select>
-
 
 
 
@@ -114,29 +76,12 @@
             What is your priority?
         </label>
 
-
         <select name="priority" required>
 
-
-            <option value="Performance">
-                Performance
-            </option>
-
-
-            <option value="Battery">
-                Battery Life
-            </option>
-
-
-            <option value="Graphics">
-                Graphics
-            </option>
-
-
-            <option value="Balanced">
-                Balanced Usage
-            </option>
-
+            <option value="Performance">Performance</option>
+            <option value="Battery">Battery Life</option>
+            <option value="Graphics">Graphics</option>
+            <option value="Balanced">Balanced Usage</option>
 
         </select>
 
@@ -147,12 +92,17 @@
         </button>
 
 
-
     </form>
 
 
 </div>
 
 
+<footer>
+    LapWise © 2026 | Developed by AJ
+</footer>
+
+
 </body>
+
 </html>
