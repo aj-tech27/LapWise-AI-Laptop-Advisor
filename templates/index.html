@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>LapWise AI Advisor</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+    <h1>💻 LapWise AI Advisor</h1>
+
+    <p class="subtitle">
+        Answer a few questions and get your perfect laptop recommendation
+    </p>
+
+
+    <form action="/recommend" method="POST">
+
+
+        <label>
+            What will you use your laptop for?
+        </label>
+
+        <select name="purpose" required>
+
+            <option value="Gaming">
+                Gaming
+            </option>
+
+            <option value="Coding">
+                Coding
+            </option>
+
+            <option value="Student">
+                Student / Learning
+            </option>
+
+            <option value="Office">
+                Office Work
+            </option>
+
+            <option value="Editing">
+                Video / Photo Editing
+            </option>
+
+        </select>
+
+
+
+        <label>
+            What is your budget?
+        </label>
+
+
+        <select name="budget" required>
+
+            <option value="50000">
+                Below ₹50,000
+            </option>
+
+
+            <option value="80000">
+                ₹50,000 - ₹80,000
+            </option>
+
+
+            <option value="120000">
+                Above ₹80,000
+            </option>
+
+
+        </select>
+
+
+
+
+        <label>
+            How much RAM do you need?
+        </label>
+
+
+        <select name="ram" required>
+
+
+            <option value="8">
+                8 GB
+            </option>
+
+
+            <option value="16">
+                16 GB
+            </option>
+
+
+            <option value="32">
+                32 GB
+            </option>
+
+
+        </select>
+
+
+
+
+        <label>
+            What is your priority?
+        </label>
+
+
+        <select name="priority" required>
+
+
+            <option value="Performance">
+                Performance
+            </option>
+
+
+            <option value="Battery">
+                Battery Life
+            </option>
+
+
+            <option value="Graphics">
+                Graphics
+            </option>
+
+
+            <option value="Balanced">
+                Balanced Usage
+            </option>
+
+
+        </select>
+
+
+
+        <button type="submit">
+            🔍 Find My Laptop
+        </button>
+
+
+
+    </form>
+
+
+</div>
+
+
+</body>
+</html>

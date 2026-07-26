@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>LapWise Recommendation</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+    <h1>🎯 Your Laptop Recommendations</h1>
+
+
+    <p class="subtitle">
+        Based on your requirements:
+        <b>{{ purpose }}</b> usage with
+        <b>{{ priority }}</b> priority
+    </p>
+
+
+
+    {% for laptop in laptops %}
+
+
+    <div class="card">
+
+
+        <h2>
+            💻 {{ laptop["Model"] }}
+        </h2>
+
+
+
+        <div class="match">
+
+            Match Score:
+            <b>{{ laptop["match"] }}%</b>
+
+        </div>
+
+
+
+        <p>
+            💰 Price:
+            ₹{{ laptop["Price"] }}
+        </p>
+
+
+        <p>
+            ⭐ Rating:
+            {{ laptop["Rating"] }}
+        </p>
+
+
+        <p>
+            ⚡ Processor:
+            {{ laptop["Core"] }}
+        </p>
+
+
+        <p>
+            🧠 RAM:
+            {{ laptop["Ram"] }}
+        </p>
+
+
+        <p>
+            💾 SSD:
+            {{ laptop["SSD"] }}
+        </p>
+
+
+        <p>
+            🎮 Graphics:
+            {{ laptop["Graphics"] }}
+        </p>
+
+
+        <p>
+            🖥 Display:
+            {{ laptop["Display"] }}
+        </p>
+
+
+        <p>
+            🪟 OS:
+            {{ laptop["OS"] }}
+        </p>
+
+
+        <p>
+            🛡 Warranty:
+            {{ laptop["Warranty"] }}
+        </p>
+
+
+
+        <div class="reason">
+
+
+            <h3>
+                Why this laptop?
+            </h3>
+
+
+            <ul>
+
+                {% for reason in laptop["reason"] %}
+
+                <li>
+                    {{ reason }}
+                </li>
+
+                {% endfor %}
+
+
+            </ul>
+
+
+        </div>
+
+
+
+    </div>
+
+
+    {% endfor %}
+
+
+
+    <a href="/" class="button">
+
+        🔄 Find Another Laptop
+
+    </a>
+
+
+
+</div>
+
+
+</body>
+
+</html>
